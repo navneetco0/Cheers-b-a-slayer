@@ -1,0 +1,190 @@
+import { Briefcase, Camera, Gamepad2, Music, Palette, Utensils } from "lucide-react";
+import type { CategoryType, EventType } from "../types/event.types";
+
+export const categories: CategoryType[] = [
+  { id: 1, name: "Music", icon: Music, color: "bg-purple-600" },
+  { id: 2, name: "Photography", icon: Camera, color: "bg-blue-600" },
+  { id: 3, name: "Gaming", icon: Gamepad2, color: "bg-green-600" },
+  { id: 4, name: "Art", icon: Palette, color: "bg-pink-600" },
+  { id: 5, name: "Food", icon: Utensils, color: "bg-orange-600" },
+  { id: 6, name: "Business", icon: Briefcase, color: "bg-indigo-600" },
+];
+export const events: EventType[] = [
+  {
+    id: 1,
+    title: "Electronic Music Festival 2025",
+    date: "NOV 15",
+    time: "7:00 PM",
+    location: "Bandra, Mumbai",
+    price: "₹1,200",
+    image:
+      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=400&h=300&fit=crop",
+    rating: 4.8,
+    attendees: 2450,
+    category: "Music",
+    isOnline: false,
+  },
+  {
+    id: 2,
+    title: "Digital Photography Workshop",
+    date: "NOV 18",
+    time: "2:00 PM",
+    location: "Andheri, Mumbai",
+    price: "₹800",
+    image:
+      "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=400&h=300&fit=crop",
+    rating: 4.9,
+    attendees: 150,
+    category: "Photography",
+    isOnline: false,
+  },
+  {
+    id: 3,
+    title: "Gaming Championship 2025",
+    date: "NOV 20",
+    time: "4:00 PM",
+    location: "Powai, Mumbai",
+    price: "₹500",
+    image:
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop",
+    rating: 4.7,
+    attendees: 890,
+    category: "Gaming",
+    isOnline: false,
+  },
+  {
+    id: 4,
+    title: "Modern Art Exhibition",
+    date: "NOV 22",
+    time: "11:00 AM",
+    location: "Fort, Mumbai",
+    price: "₹300",
+    image:
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    rating: 4.6,
+    attendees: 320,
+    category: "Art",
+    isOnline: false,
+  },
+  {
+    id: 5,
+    title: "Street Food Festival",
+    date: "NOV 25",
+    time: "6:00 PM",
+    location: "Juhu, Mumbai",
+    price: "₹200",
+    image:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop",
+    rating: 4.5,
+    attendees: 1200,
+    category: "Food",
+    isOnline: false,
+  },
+  {
+    id: 6,
+    title: "Startup Pitch Competition",
+    date: "NOV 28",
+    time: "10:00 AM",
+    location: "BKC, Mumbai",
+    price: "Free",
+    image:
+      "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=400&h=300&fit=crop",
+    rating: 4.4,
+    attendees: 400,
+    category: "Business",
+    isOnline: false,
+  },
+];
+
+export const onlineEvents:EventType[] = [
+  {
+    id: 7,
+    title: "Virtual Reality Workshop",
+    date: "DEC 1",
+    time: "3:00 PM",
+    location: "Online",
+    price: "₹600",
+    image:
+      "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=400&h=300&fit=crop",
+    rating: 4.8,
+    attendees: 850,
+    category: "Technology",
+    isOnline: true,
+  },
+  {
+    id: 8,
+    title: "Online Cooking Masterclass",
+    date: "DEC 3",
+    time: "5:00 PM",
+    location: "Online",
+    price: "₹400",
+    image:
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+    rating: 4.9,
+    attendees: 1200,
+    category: "Food",
+    isOnline: true,
+  },
+  {
+    id: 9,
+    title: "Digital Marketing Seminar",
+    date: "DEC 5",
+    time: "7:00 PM",
+    location: "Online",
+    price: "₹350",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+    rating: 4.7,
+    attendees: 950,
+    category: "Business",
+    isOnline: true,
+  },
+];
+
+export const trendingEvents:EventType[] = [
+  {
+    id: 10,
+    title: "International Jazz Festival",
+    date: "DEC 10",
+    time: "8:00 PM",
+    location: "Delhi",
+    price: "₹2,500",
+    image:
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+    rating: 4.9,
+    attendees: 3200,
+    category: "Music",
+    isOnline: false,
+    isTrending: true,
+  },
+  {
+    id: 11,
+    title: "Tech Conference 2025",
+    date: "DEC 12",
+    time: "9:00 AM",
+    location: "Bangalore",
+    price: "₹1,800",
+    image:
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop",
+    rating: 4.8,
+    attendees: 2800,
+    category: "Technology",
+    isOnline: false,
+    isTrending: true,
+  },
+  {
+    id: 12,
+    title: "Fashion Week Preview",
+    date: "DEC 15",
+    time: "6:00 PM",
+    location: "Goa",
+    price: "₹1,500",
+    image:
+      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=300&fit=crop",
+    rating: 4.6,
+    attendees: 1800,
+    category: "Fashion",
+    isOnline: false,
+    isTrending: true,
+  },
+];
