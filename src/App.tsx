@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import "./App.css";
 import logo from "./assets/logo.webp";
+import apple from "./assets/apple.png";
+import playStore from "./assets/play.svg";
 
 type EventType = {
   id: number;
@@ -703,11 +705,15 @@ const App = () => {
               </h5>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-gray-400">
-                  <div className="w-6 h-6 bg-gray-600 rounded"></div>
+                  <div className="w-6 h-6 rounded">
+                    <img src={playStore} className="h-5" alt="play store"/>
+                  </div>
                   <span className="text-sm">Google Play</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-400">
-                  <div className="w-6 h-6 bg-gray-600 rounded"></div>
+                  <div className="w-6 h-6 rounded">
+                    <img src={apple} className="h-5" alt="app store"/>
+                  </div>
                   <span className="text-sm">App Store</span>
                 </div>
               </div>
